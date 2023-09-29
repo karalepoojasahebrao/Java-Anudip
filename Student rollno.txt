@@ -1,0 +1,40 @@
+package com.demo;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class rollno {
+ public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		 System.out.println("please enter student roll n0");               //taking student roll number from user
+		 int no=sc.nextInt();
+		 
+		 if(no.charAt(0)==1 || no.charAt(1)==5 || no.charAt(2)==9 || no.charAt(3)==13 || no.charAt(4)==17 || no.charAt(5)==21)
+		 {
+			 
+			 System.out.println("This is the Sapphire");                //check roll number for Sapphier students
+			 
+		 }
+		 else if(no.charAt(0)==2 || no.charAt(1)==6 || no.charAt(2)==10 || no.charAt(3)==14 || no.charAt(4)==18 || no.charAt(5)==22)
+		 {
+			 
+			 System.out.println("This is the Perl");                        //check roll number for Perl students
+			 
+		 }
+		 else if(no.charAt(0)==3 || no.charAt(1)==7 || no.charAt(2)==11 || no.charAt(3)==15 || no.charAt(4)==19 || no.charAt(5)==23)
+		 {
+			 
+			 System.out.println("This is the Ruby");                //check roll number for ruby students
+			 
+		 }
+		 
+		 else if(no.charAt(0)==4 || no.charAt(1)==8 || no.charAt(2)==12 || no.charAt(3)==16 || no.charAt(4)==20 || no.charAt(5)==24)
+		 {
+			 
+			 System.out.println("This is the Emerald");              //check roll number for emerald students
+			 
+		 }
+		 
+	}
+
+}
