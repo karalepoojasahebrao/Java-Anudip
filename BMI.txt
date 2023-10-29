@@ -1,0 +1,28 @@
+package com.demo;
+ import java.util.Scanner;
+public class Bmicheck {
+	 public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in)
+                                  System.out.println("please enter your height in m");    //take the input from user for height
+		double height=sc.nextDouble();
+		
+		System.out.println("please enter your Weight");          //take input from user for weight
+		double weight=sc.nextDouble();
+		
+		 double bmi=(weight/Math.pow(height,2));    //calculate the BMI
+		 
+		 if (bmi < 18.5)
+	            System.out.print("underweight");       //check the condition for underweight
+	  
+	        else if (bmi >= 18.5 && bmi < 24.9)
+	            System.out.print("Healthy");                   //check the condition for healty
+	  
+	        else if (bmi >= 24.9 && bmi < 30)
+	            System.out.print("overweight");              //check the condition for overweight
+	  
+	        else if (bmi >= 30)
+	            System.out.print("Suffering from Obesity");                  //check the condition for suffering from obesity
+		
+	}
+
+}
