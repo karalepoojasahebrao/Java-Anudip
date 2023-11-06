@@ -1,0 +1,35 @@
+package com.demo;
+
+public class arraypro1 {
+
+	public static void main(String[] args) {
+		Employe[] arr=new Employe[5];                                 //create new object with 5 array
+		arr[0]=new Employe(101,"Tanuja",1001);
+		arr[1]=new Employe(102,"Pooja",2001);
+		arr[2]=new Employe(103,"Akashada",3001);
+		arr[3]=new Employe(104,"Akash",4001);
+		arr[4]=new Employe(105,"Praksh",5001);
+              
+        for(int i=0;i<arr.length;i++)
+        {
+        System.out.println("UserId"+arr[i].userid+"Name"+arr[i].name+"password"+arr[i].password);    
+        	
+        }
+	}
+
+}
+
+class Employe                                                         //define separate class
+{
+ int userid;
+ String name;
+ int password;
+ Employe(int userid,String name,int password)                         //define constructor
+ {
+	 this.userid=userid;                                         //assign values
+	 this.name=name;
+	 this.password=password;
+	 
+ }
+
+}
